@@ -1,0 +1,10 @@
+<services>
+  <service name="cpanspec" mode="manual">
+    <param name="source">Bytes::Random::Secure</param>
+    <param name="add-buildrequires">make</param>
+  </service>
+  <service name="perl_regex" mode="manual">
+    <param name="regex">s~perldoc.*~~g;s~%license.*~~g;</param>
+    <param name="file">perl-Bytes-Random-Secure.spec</param>
+  </service>
+</services>
